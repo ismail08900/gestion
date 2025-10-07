@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des élèves</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestion des élèves</h1>
+
+  <!-- Formulaire d'ajout / modification -->
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Nom" required>
+    <input type="number" id="age" placeholder="Âge" required>
+    <input type="text" id="class" placeholder="Classe" required>
+    <button type="submit" id="submitBtn">Ajouter</button>
+    <button type="button" id="cancelBtn" class="hidden">Annuler</button>
+  </form>
+
+  <!-- Tableau des élèves -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Âge</th>
+        <th>Classe</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
